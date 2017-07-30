@@ -9,6 +9,8 @@ public class Lunch_browser {
 		
 		driver.get("https://ceac.state.gov/IV/Login.aspx");
 		
+		driver.manage().window().maximize();
+		
 		Thread.sleep(3000);
 		
 		driver.quit();
