@@ -13,13 +13,13 @@ public class Phptraval {
 		driver .get("http://www.phptravels.net/");
 		
 		//Click on myaccount.
-		driver.findElement(By.xpath("html/body/div[2]/div/div/div[2]/ul/li[2]/a")).click();
+		driver.findElement(By.xpath(".//*[@id='li_myaccount']/a")).click();
 		
 		//Wait 3 sec.
 		Thread.sleep(3000);
 		
 		//Click on Sing Up button.
-		driver.findElement(By.xpath("html/body/div[2]/div/div/div[2]/ul/li[2]/ul/li[2]/a")).click();
+		driver.findElement(By.xpath(".//*[@id='li_myaccount']/ul/li[2]/a")).click();
 		
 		//Enter First Name.
 		driver.findElement(By.xpath(".//*[@id='headersignupform']/div[3]/input")).sendKeys("zohirul");
@@ -31,7 +31,7 @@ public class Phptraval {
 		driver.findElement(By.xpath(".//*[@id='headersignupform']/div[5]/input")).sendKeys("7189155916");
 		
 		//Enter email Address.
-		driver.findElement(By.xpath(".//*[@id='headersignupform']/div[6]/input")).sendKeys("johir_789@yahoo.com");
+		driver.findElement(By.xpath(".//*[@id='headersignupform']/div[6]/input")).sendKeys("zulfa013@gmail.com");
 		
 		//Enter password.
 		driver.findElement(By.xpath(".//*[@id='headersignupform']/div[7]/input")).sendKeys("05071988");
